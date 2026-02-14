@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(173, 172, 172);
 }
 
 .botoes {
@@ -47,4 +47,5 @@ body {
 
 .pai img {
     margin-top: 190px;
+
 }

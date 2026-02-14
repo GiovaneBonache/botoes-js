@@ -24,4 +24,5 @@ if (botoes.length > 0) {
 
     primeiro.classList.add('active');
     primeiro.style.setProperty('--cor', primeiro.dataset.color);
+    imagem.src = primeiro.dataset.img;
 }

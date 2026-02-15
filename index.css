@@ -1,5 +1,10 @@
 body {
     background-color: rgb(173, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .botoes {
@@ -7,29 +12,37 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 
-    margin-left: 20%;
-    margin-top: 20%;
 }
 
 .bnt-color {
-    border-color: red;
-    border-radius: 6px;
-    border: 5px solid red;
-    height: 50px;
-    width: 150px;
+    border-radius: 8px;
+    height: 40px;
+    width: 160px;
     cursor: pointer;
-    background-color: white;
+    background-color: #dfdddd;
     padding: 10px;
     text-align: center;
+    position: relative;
+    box-shadow: 2px 3px 8px -2px
+}
+
+.bnt-color h1 {
+    font-size: 20px;
+    margin-left: 120%;
+    transform: translateY(-50%);
 }
 
 
 .bordinha {
-    margin-left: 20px;
-    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
     width: 30px;
     height: 30px;
     transition: background-color 0.2s ease;
+    border: 2px solid black;
+    border-radius: 6px;
 }
 
 .bnt-color.active .bordinha {
@@ -41,11 +54,23 @@ body {
     height: 300px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     padding: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+
 }
 
-.pai img {
-    margin-top: 190px;
 
+.texto {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
